@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ольга](https://up.htmlacademy.ru/adaptive/19/user/27653).
-* Наставник: `Неизвестно`.
+* Наставник: [Маргарита Попова](https://htmlacademy.ru/profile/id230166).
 
 ---
 
