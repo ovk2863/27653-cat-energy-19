@@ -1,0 +1,47 @@
+.about-product__title {
+  font-size: 36px;
+}
+
+.about-product__list {
+  font-family: @secondary-font;
+  list-style-type: none;
+  color: @content-color;
+}
+
+.about-product__text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 60px;
+}
+
+.about-product__item {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.about-product__item::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+}
+
+.about-product__item--leaf::before {
+  background: url("../../img/advantage-leaf@1x.png") center;
+  background-color: @icon-background;
+}
+
+.about-product__item--clock::before {
+  background: url("../../img/advantage-clock@1x.png") center;
+  background-color: @icon-background;
+}
+
+.about-product__item--powder::before {
+  background: url("../../img/advantage-powder@1x.png") center;
+  background-color: @icon-background;
+}
+
+.about-product__item--dining::before {
+  background: url("../../img/advantage-dining@1x.png") center;
+  background-color: @icon-background;
+}
