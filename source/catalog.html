@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -14,21 +15,21 @@
         <a class="page-header__logo page-header__logo--title" href="index.html">
           <img class="page-header__logo-img" src="http://via.placeholder.com/150x39" alt="Кэт энерджи" width="150" height="39">
         </a>
-        <nav class="page-header__nav main-nav">
-          <button class="main-nav__button" type="button">Открыть меню</button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--active">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
       </div>
+      <nav class="page-header__nav main-nav">
+        <button class="main-nav__button" type="button">Открыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="page-main">
       <div class="container">
@@ -226,6 +227,9 @@
           </li>
           <li class="catalog__item">
             <article class="product">
+              <svg class="product__icon-plus" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"   y="0px" viewbox="0 0 30 30" style="enable-background: new 0 0 30 30;" xml:space="preserve">
+              <polygon class="st0" points="30,14 16,14 16,0 14,0 14,14 0,14 0,16 14,16 14,30 16,30 16,16 30,16 "/>
+              </svg>
               <p class="product__show-more">Показать еще 100500 товаров</p>
               <p class="product__show-text">На самом деле вкусов гораздо больше!</p>
               <a class="button product__button product__button--show" href="#">Показать все</a>
