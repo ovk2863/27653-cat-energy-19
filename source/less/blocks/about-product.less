@@ -1,13 +1,12 @@
 .about-product__title {
   font-size: 36px;
+  line-height: 1.6;
 }
 
 .about-product__list {
   margin: 0;
   padding: 0;
-  font-family: @secondary-font;
   list-style-type: none;
-  color: @content-color;
 }
 
 .about-product__text {
@@ -17,32 +16,43 @@
 
 .about-product__item {
   position: relative;
-  margin-bottom: 60px;
-}
+  color: @content-color;
+  font-family: @secondary-font;
 
-.about-product__item::before {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 60px;
-}
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+  }
 
-.about-product__item--leaf::before {
-  background: url("../../img/advantage-leaf@1x.png") center;
-  background-color: @icon-background;
-}
+  &--leaf {
+    &::before {
+      background: url("../../img/advantage-leaf@1x.png") center;
+      background-color: @icon-background;
+    }
+  }
 
-.about-product__item--clock::before {
-  background: url("../../img/advantage-clock@1x.png") center;
-  background-color: @icon-background;
-}
+  &--clock {
+    &::before {
+      background: url("../../img/advantage-clock@1x.png") center;
+      background-color: @icon-background;
+    }
+  }
 
-.about-product__item--powder::before {
-  background: url("../../img/advantage-powder@1x.png") center;
-  background-color: @icon-background;
-}
+  &--powder {
+    &::before {
+      background: url("../../img/advantage-powder@1x.png") center;
+      background-color: @icon-background;
+    }
+  }
 
-.about-product__item--dining::before {
-  background: url("../../img/advantage-dining@1x.png") center;
-  background-color: @icon-background;
+  &--dining {
+    &::before {
+      background: url("../../img/advantage-dining@1x.png") center;
+      background-color: @icon-background;
+    }
+  }
 }

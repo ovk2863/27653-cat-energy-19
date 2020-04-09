@@ -6,11 +6,31 @@
 }
 
 .main-nav__link {
+  position: relative;
   display: block;
-  padding: 24px 70px;
+  padding: 20px;
   font-size: 20px;
+  line-height: 1;
   font-weight: 500;
   color: @main-color;
   border-top: 1px solid #f2f2f2;
   text-decoration: none;
+
+  &:hover {
+    color: @nav-link-hover;
+  }
+
+  &:active {
+    color: @nav-link-active;
+  }
+}
+
+.main-nav__button {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  width: 25px;
+  height: 20px;
+  background: @main-background url("../../img/icon-mobile-menu.svg") no-repeat;
+  border: none;
 }

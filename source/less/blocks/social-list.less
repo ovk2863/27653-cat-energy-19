@@ -1,5 +1,22 @@
 .social-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 0;
   list-style-type: none;
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.social-list__icon {
+  fill: @social-icon-color;
+
+  &:hover {
+    fill: @social-icon-hover;
+  }
+
+  &:active {
+    fill-opacity: 0.3;
+  }
 }
 
 .social-list__icon--fb {
