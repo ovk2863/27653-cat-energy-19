@@ -1,0 +1,35 @@
+.button {
+  display: block;
+  padding: 14px 73px;
+  font: inherit;
+  line-height: 20px;
+  color: @secondary-color;
+  background-color: @btn-default-background;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: @btn-interaction-background;
+  }
+
+  &:active {
+    color: @btn-active-color;
+    background-color: @btn-interaction-background;
+  }
+
+  &--disabled {
+    background-color: @secondary-background;
+    color: @content-color;
+
+    &:hover {
+      background-color: @btn-secondary-interaction-background;
+    }
+
+    &:active {
+      color: @btn-secondary-active-color;
+      background-color: @btn-secondary-interaction-background;
+    }
+  }
+}
