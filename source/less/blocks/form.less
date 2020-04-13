@@ -1,0 +1,60 @@
+.form__fieldset {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  border: none;
+  overflow: hidden;
+
+  &--program-type {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  &--owner-data {
+    .form__legend {
+      &::after {
+        left: 225px;
+      }
+    }
+  }
+
+  &--comment {
+    .form__legend {
+      &::after {
+        left: 160px;
+      }
+    }
+  }
+}
+
+.form__legend {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
+  font-family: @main-font;
+  color: @main-color;
+  font-size: 26px;
+  line-height: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 170px;
+    width: 200px;
+    height: 3px;
+    background-color: @icon-background;
+  }
+}
+
+.form__abbr-required {
+  text-align: center;
+}
+
+.form__button {
+  width: 100%;
+}

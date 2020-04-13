@@ -4,12 +4,25 @@
 }
 
 .add-catalog__list {
-  list-style-type: none;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .add-catalog__title {
+  position: relative;
+  width: 100%;
   font-size: 24px;
+  font-weight: normal;
   line-height: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 250px;
+    width: 200px;
+    height: 3px;
+    background-color: @icon-background;
+  }
 }

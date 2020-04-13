@@ -1,0 +1,91 @@
+.control--radio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+  }
+
+  &:hover {
+    &::before {
+      border: 1px solid #bababa;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.control--radio > .control__radio-input:checked + .control__title::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  width: 12px;
+  height: 12px;
+  background-color: @icon-background;
+  border-radius: 50%;
+}
+
+.control__title {
+  margin-left: 40px;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.control--checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+  }
+
+  &:hover {
+    &::before {
+      border: 1px solid #bababa;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.control--checkbox > .control__checkbox-input:checked + .control__title::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  width: 22px;
+  height: 17px;
+  background: url("../../img/icon-tick.svg") no-repeat;
+}

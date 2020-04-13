@@ -8,28 +8,30 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container">
-        <a class="page-header__logo page-header__logo--img">
-          <img class="page-header__logo-img" src="http://via.placeholder.com/40x39" alt="Логотип магазина 'Кэт энерджи'" width="40" height="39">
-        </a>
-        <a class="page-header__logo page-header__logo--title">
-          <img class="page-header__logo-img" src="http://via.placeholder.com/150x39" alt="Кэт энерджи" width="150" height="39">
-        </a>
+      <div class="page-header__container">
+        <div class="container">
+          <a class="page-header__logo page-header__logo--img">
+            <img class="page-header__logo-img" src="http://via.placeholder.com/40x39" alt="Логотип магазина 'Кэт энерджи'" width="40" height="39">
+          </a>
+          <a class="page-header__logo page-header__logo--title">
+            <img class="page-header__logo-img" src="http://via.placeholder.com/150x39" alt="Кэт энерджи" width="150" height="39">
+          </a>
+        </div>
+        <nav class="main-nav page-header__nav">
+          <button class="main-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav page-header__nav">
-        <button class="main-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">
@@ -37,8 +39,10 @@
       </h1>
       <section class="intro page-main__intro">
         <div class="intro__title-wrap">
-          <h2 class="intro__title">Функциональное питание для котов</h2>
-          <p class="intro__subtitle">Занялся собой? Займись котом!</p>
+          <div class="container">
+            <h2 class="intro__title">Функциональное питание для котов</h2>
+            <p class="intro__subtitle">Занялся собой? Займись котом!</p>
+          </div>
         </div>
         <div class="intro__img-wrap">
           <img class="intro__img" src="img/index-can-mobile@1x.png" alt="Образец упаковки корма Кэт Энерджи" width="280" height="270">
@@ -116,11 +120,11 @@
       <section class="page-footer__contacts contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <div class="contacts__row contacts__row--index">
-          <p class="contacts__offer">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contacts__offer">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
         <div class="contacts__map-wrap">
-          <img class="contacts__map" src="img/bg-map-mobile@1x.png" alt="Наш адрес: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <img class="contacts__map" src="img/bg-map-mobile@1x.png" alt="Наш адрес: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="400">
         </div>
       </section>
       <div class="container">
@@ -169,7 +173,7 @@
         <div class="copyright page-footer__copyright">
           <a class="copyright__logo copyright__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__logo-title">HTML Academy</span>
-            <img class="copyright__logo-img" src="http://via.placeholder.com/27x34" alt="Html Academy" width="27" height="34">
+            <svg class="copyright__logo-img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 60 60"><path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
           </a>
         </div>
       </div>
