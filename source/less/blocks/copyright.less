@@ -1,8 +1,9 @@
-.copyright__logo-link {
+.copyright__logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  padding-top: 15px;
   text-decoration: none;
 
   &:hover {
@@ -15,8 +16,8 @@
 }
 
 .copyright__logo-img {
-  width: 27px;
-  height: 34px;
+  height: 38px;
+  width: 35px;
 }
 
 .copyright__logo-title {
@@ -24,4 +25,10 @@
   font-size: 16px;
   line-height: 1;
   color: @content-color;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__logo {
+    width: 163px;
+  }
 }

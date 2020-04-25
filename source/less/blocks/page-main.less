@@ -1,13 +1,17 @@
 .page-main__intro {
+  min-height: 480px;
   margin-bottom: 22px;
   text-align: center;
 }
 
 .page-main__programs {
-  margin-bottom: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
 }
 
 .page-main__about-product {
+  margin: 0 auto;
   margin-bottom: 42px;
 }
 
@@ -22,10 +26,6 @@
   width: 320px;
   margin: 0 auto;
   overflow: hidden;
-}
-
-.page-main__example {
-  padding: 33px 20px 38px 20px;
 }
 
 .page-main__form {
@@ -51,4 +51,40 @@
   line-height: 1.6;
   font-weight: normal;
   font-family: @main-font;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__intro {
+    min-height: 800px;
+    text-align: left;
+  }
+
+  .page-main__programs {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .page-main__example {
+    width: 768px;
+    margin: 0 auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__intro {
+    min-height: 557px;
+    text-align: left;
+  }
+
+  .page-main__programs {
+    width: 1300px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+  .page-main__about-product {
+    margin: 0 auto;
+  }
 }
