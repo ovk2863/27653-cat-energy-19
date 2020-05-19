@@ -18,6 +18,10 @@
     background-repeat: no-repeat;
     background-position: top center;
     z-index: -1;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/index-background-mobile@2x.jpg");
+    }
   }
 }
 
@@ -100,6 +104,10 @@
       background-repeat: no-repeat;
       background-position: left top;
       background-size: 720px 696px;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../../img/index-background-desktop@2x.jpg");
+      }
     }
 
     .container {
