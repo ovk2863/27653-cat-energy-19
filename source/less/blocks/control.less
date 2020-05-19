@@ -1,0 +1,158 @@
+.control--radio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .control__title {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -45px;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #cdcdcd;
+      border-radius: 50%;
+    }
+
+    &:hover {
+      &::after {
+        border: 1px solid #bababa;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:disabled {
+      opacity: 0.3;
+    }
+  }
+}
+
+.control__radio-input:checked + .control__title::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: -35px;
+  width: 12px;
+  height: 12px;
+  background-color: @icon-background;
+  border-radius: 50%;
+}
+
+.control__radio-input:focus + .control__title::after {
+  box-shadow: 0 0 0 2px @content-color;
+}
+
+.control__title {
+  padding-top: 3px;
+  margin-left: 45px;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #222222;
+  text-transform: uppercase;
+  word-break: break-word;
+}
+
+.control--checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .control__title {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -42px;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #cdcdcd;
+    }
+
+    &:hover {
+      &::after {
+        border: 1px solid #bababa;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:disabled {
+      opacity: 0.3;
+    }
+  }
+}
+
+.control__checkbox-input:checked + .control__title::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -38px;
+  width: 22px;
+  height: 17px;
+  background: url("../../img/icon-tick.svg") no-repeat;
+}
+
+.control__checkbox-input:focus + .control__title::after {
+  box-shadow: 0 0 0 2px @content-color;
+}
+
+@media (min-width: @tablet-width) {
+  .control {
+    &:first-child {
+      margin-right: auto;
+    }
+
+    &--radio {
+      margin-bottom: 26px;
+
+      .control__title {
+        &::after {
+          width: 40px;
+          height: 40px;
+          left: -60px;
+        }
+      }
+    }
+
+    &--checkbox {
+      width: 283px;
+
+      .control__title {
+        &::after {
+          width: 40px;
+          height: 40px;
+          left: -58px;
+        }
+      }
+    }
+  }
+
+  .control__title {
+    font-size: 20px;
+    line-height: 1;
+    margin-left: 57px;
+    padding-top: 9px;
+  }
+
+  .control__radio-input:checked + .control__title::before {
+    width: 18px;
+    height: 18px;
+    top: 11px;
+    left: -50px;
+  }
+
+  .control__checkbox-input:checked + .control__title::before {
+    top: 12px;
+    left: -47px;
+  }
+}

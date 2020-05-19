@@ -1,9 +1,11 @@
 .offer {
-  padding-top: 65px;
-  padding-bottom: 43px;
-  padding-left: 60px;
-  padding-right: 60px;
-  background: url("../../img/gift-photo-mobile@1x.jpg") no-repeat center;
+  padding-top: 162px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background: url("../../img/icon-gift.svg") no-repeat 113px 66px, url("../../img/gift-photo-tablet@1x.jpg") no-repeat center;
+  background-size: 56px 61px, cover;
+  background-color: @icon-background;
   text-align: center;
 }
 
@@ -14,8 +16,45 @@
 }
 
 .offer__text {
+  width: 200px;
   font-size: 16px;
   line-height: 1.25;
   color: #ffffff;
   padding: 10px;
+  font-family: @secondary-font;
+}
+
+@media (min-width: @tablet-width) {
+  .offer {
+    min-height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: left;
+    background: url("../../img/icon-gift.svg") no-repeat 90px 65px, url("../../img/gift-photo-tablet@1x.jpg") no-repeat center;
+    background-color: @icon-background;
+    background-size: 56px 61px, cover;
+    padding-right: 115px;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .offer {
+    width: 245px;
+    min-height: 289px;
+    flex-direction: column;
+    background: url("../../img/icon-gift.svg") no-repeat 97px 62px, url("../../img/gift-photo-desktop@1x.jpg") no-repeat top;
+    background-color: @icon-background;
+    background-size: 56px 61px, cover;
+    padding-top: 165px;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: center;
+  }
+
+  .offer__text {
+    padding-bottom: 30px;
+    margin: 0;
+  }
 }
