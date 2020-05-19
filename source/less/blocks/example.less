@@ -1,12 +1,13 @@
 .example {
-  padding-bottom: 40px;
+  padding-top: 15px;
   background-color: @secondary-background;
 }
 
 .example__title {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 25px;
+  width: 280px;
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-bottom: 28px;
   font-size: 36px;
   line-height: 1.6;
   font-weight: normal;
@@ -30,14 +31,13 @@
 
 .example__info {
   position: relative;
-  margin: 0;
   padding: 12px;
   margin-bottom: 20px;
   width: 124px;
-  height: 55px;
+  min-height: 55px;
   border: 1px solid #cdcdcd;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 5px;
 
   &:first-child {
     margin-right: 32px;
@@ -45,8 +45,7 @@
 }
 
 .example__num {
-  margin: 0;
-  margin-bottom: 7px;
+  margin: auto;
   padding: 0;
   font-size: 24px;
   line-height: 1;
@@ -55,10 +54,11 @@
 
 .example__caption {
   position: absolute;
-  top: 45px;
-  left: 19%;
-  margin: 0;
-  width: 77px;
+  left: 0;
+  right: 0;
+  bottom: -15px;
+  margin: 0 auto;
+  width: 82px;
   font-size: 12px;
   line-height: 1;
   font-family: @secondary-font;
@@ -67,33 +67,34 @@
 
 .example__price {
   text-transform: uppercase;
-}
-
-.example__container {
-  padding: 20px;
-  padding-bottom: 25px;
+  word-break: break-word;
 }
 
 @media (min-width: @tablet-width) {
   .example {
-    background-color: transparent;
+    background-color: #ffffff;
+  }
+
+  .example__container {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 30px 235px 30px;
   }
 
   .example__title {
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 30px;
     padding-bottom: 65px;
     font-size: 60px;
     line-height: 1;
   }
 
   .example__description {
-    padding-bottom: 55px;
+    padding-bottom: 50px;
     font-size: 16px;
     font-family: @secondary-font;
     line-height: 1.5;
-  }
-
-  .example__container {
-    padding: 42px 30px 235px 30px;
   }
 
   .example__data {
@@ -101,8 +102,9 @@
   }
 
   .example__info {
+    padding-top: 18px;
     width: 162px;
-    height: 72px;
+    min-height: 72px;
 
     &:first-child {
       margin-right: 40px;
@@ -116,8 +118,8 @@
 
   .example__caption {
     width: 130px;
-    left: 16px;
-    top: 60px;
+    left: 0;
+    top: 62px;
     font-size: 14px;
     line-height: 1.23;
     background-color: @main-background;
@@ -128,26 +130,36 @@
     text-align: right;
     width: 174px;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 1.4;
     margin-left: auto;
   }
 }
 
 @media (min-width: @desktop-width) {
   .example {
-    background: linear-gradient(#ffffff 0%, #ffffff 27%, #f2f2f2 27%, #f2f2f2 100%);
-    width: 1300px;
+    margin: 0 auto;
+    padding-top: 0;
+    background: linear-gradient(to bottom, white 0%, white 172px, #f2f2f2 172px, #f2f2f2 100%);
     display: flex;
   }
 
+  .example__wrap {
+    display: flex;
+    width: 1300px;
+    margin: 0 auto;
+  }
+
   .example__container {
-    padding-right: 40px;
-    padding-left: 40px;
+    width: 568px;
+    background: linear-gradient(#ffffff 0%, #ffffff 27%, #f2f2f2 27%, #f2f2f2 100%);
+    padding-right: 20px;
+    padding-left: 20px;
     padding-bottom: 10px;
   }
 
   .example__title {
-    padding-bottom: 147px;
+    padding-top: 45px;
+    padding-bottom: 145px;
   }
 
   .example__description {
@@ -156,11 +168,18 @@
   }
 
   .example__price {
-    width: 100%;
+    width: 327px;
+    display: flex;
     text-align: left;
+    margin-left: 0;
+    justify-content: space-between;
   }
 
   .example__info {
     margin-bottom: 46px;
+  }
+
+  .example__caption {
+    background-color: #f2f2f2;
   }
 }

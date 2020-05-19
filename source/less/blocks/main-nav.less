@@ -1,66 +1,93 @@
 .main-nav {
-  // display: none;
-  width: 320px;
+  position: relative;
+  width: 100%;
   margin: 0 auto;
 }
 
 .main-nav__list {
-  width: 100%;
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-align: center;
 }
 
+.main-nav__item {
+  border-top: 1px solid #f2f2f2;
+
+  &:last-child {
+    border-bottom: 1px solid #f2f2f2;
+  }
+}
+
 .main-nav__link {
   display: block;
-  padding: 20px;
+  padding: 23px 20px;
   font-size: 20px;
   line-height: 1;
   font-weight: 500;
   text-transform: uppercase;
   color: @main-color;
-  border-top: 1px solid #f2f2f2;
   text-decoration: none;
 
   &:hover {
-    color: @nav-link-hover;
+    opacity: 0.6;
   }
 
   &:active {
-    color: @nav-link-active;
+    opacity: 0.3;
+  }
+
+  &--current {
+    pointer-events: none;
   }
 }
 
 .main-nav__button {
   position: absolute;
-  top: 30px;
-  right: 35px;
+  top: -42px;
+  right: 20px;
   width: 25px;
   height: 20px;
-  background: @main-background url("../../img/icon-mobile-menu.svg") no-repeat;
+  background: transparent url("../../img/icon-close.svg") no-repeat center;
   border: none;
+
+  &--closed {
+    background: transparent url("../../img/icon-mobile-menu.svg") no-repeat center;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .main-nav {
     width: auto;
-    min-height: 90px;
     margin: 0;
   }
 
   .main-nav__list {
+    width: 460px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
   }
 
+  .main-nav__item {
+    padding-left: 20px;
+    border: none;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
   .main-nav__link {
-    padding: 20px 18px;
+    padding: 19px 0 8px;
     font-size: 18px;
     font-weight: normal;
     line-height: 1.4;
-    border: none;
+
+    &--current {
+      border-bottom: 2px solid @icon-background;
+    }
   }
 
   .main-nav__button {
@@ -70,13 +97,31 @@
 
 @media (min-width: @desktop-width) {
   .main-nav__list {
-    margin-left: 58px;
+    width: 550px;
+    padding-left: 10px;
+    padding-right: 40px;
   }
 
   .main-nav__link {
     font-size: 20px;
     line-height: 1.25;
     text-align: left;
-    color: @secondary-color;
+    color: @main-color;
+
+    &--index {
+      color: @secondary-color;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+
+      &.main-nav__link--current {
+        border-bottom: 2px solid @secondary-color;
+      }
+    }
   }
 }

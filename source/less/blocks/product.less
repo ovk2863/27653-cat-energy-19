@@ -1,11 +1,16 @@
 .product {
+  width: 320px;
+  padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 20px;
+  min-height: 205px;
 
   &--show {
     flex-direction: column;
     align-items: center;
+    padding-top: 60px;
+    background: url("../../img/icon-plus.svg") no-repeat 146px 25px;
+    background-size: 30px 30px;
   }
 }
 
@@ -13,7 +18,10 @@
   font-size: 16px;
   line-height: 1.25;
   font-weight: normal;
-  padding-right: 49px;
+  margin: 0;
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-bottom: 15px;
   text-transform: uppercase;
 }
 
@@ -23,26 +31,47 @@
 }
 
 .product__column {
-  width: 130px;
-  margin-left: 10px;
-  margin-bottom: 23px;
+  width: 140px;
 }
 
 .product__properties {
-  width: 130px;
+  width: 100%;
   font-family: @secondary-font;
   font-size: 12px;
   line-height: 1.3;
   color: @content-color;
+  border-collapse: collapse;
+  word-break: break-word;
 }
 
 .product__button {
   width: 100%;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 22px;
+
+  &--show {
+    margin-bottom: 40px;
+    background-color: @secondary-background;
+    color: @content-color;
+
+    &:hover {
+      background-color: @btn-secondary-interaction-background;
+    }
+
+    &:active {
+      color: @btn-secondary-active-color;
+      background-color: @btn-secondary-interaction-background;
+    }
+  }
 }
 
 .product__show-more {
   font-size: 16px;
   line-height: 1.25;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  word-break: break-word;
 }
 
 .product__show-text {
@@ -50,6 +79,7 @@
   font-size: 12px;
   line-height: 1.3;
   color: @content-color;
+  margin-bottom: 20px;
 }
 
 .product__icon-plus {
@@ -60,4 +90,142 @@
 
 .product__data {
   text-align: right;
+}
+
+@media (min-width: @tablet-width) {
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    min-height: 345px;
+    justify-content: space-between;
+
+    &--show {
+      padding-right: 40px;
+      padding-left: 40px;
+      padding-top: 165px;
+      background: url("../../img/icon-plus.svg") no-repeat 130px 55px;
+      background-size: 61px 61px;
+      border: 1px solid #cdcdcd;
+      margin-top: 90px;
+    }
+
+    .product__show-more {
+      padding: 0 40px;
+      padding-bottom: 25px;
+      font-size: 20px;
+      line-height: 1;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .product__show-text {
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.3;
+      font-family: @secondary-font;
+      padding: 0 30px;
+      padding-bottom: 83px;
+      margin: 0;
+    }
+  }
+
+  .product__title {
+    font-size: 20px;
+    line-height: 1;
+    padding: 0 50px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .product__properties {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1;
+    font-family: @secondary-font;
+    word-break: break-word;
+  }
+
+  .product__row {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .product__data {
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 6px;
+  }
+
+  .product__button {
+    width: 250px;
+    margin-bottom: 40px;
+
+    &--show {
+      margin-bottom: 40px;
+      background-color: @secondary-background;
+      color: @content-color;
+
+      &:hover {
+        background-color: @btn-secondary-interaction-background;
+      }
+
+      &:active {
+        color: @btn-secondary-active-color;
+        background-color: @btn-secondary-interaction-background;
+      }
+    }
+  }
+
+  .product__column {
+    width: 250px;
+    padding-bottom: 33px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .product {
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 245px;
+    padding-bottom: 35px;
+
+    &--show {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 40px;
+      margin-top: 82px;
+      background-position: 90px 54px;
+    }
+
+    .product__show-more {
+      padding: 0 25px;
+      padding-bottom: 23px;
+    }
+
+    .product__show-text {
+      padding: 0 10px;
+      padding-bottom: 40px;
+    }
+  }
+
+  .product__title {
+    padding: 0 20px 17px 20px;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .product__column {
+    width: 170px;
+  }
+
+  .product__button {
+    width: 170px;
+    padding: 10px 20px;
+    margin: 0 auto;
+  }
 }

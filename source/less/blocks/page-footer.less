@@ -1,22 +1,17 @@
 .page-footer {
-  text-align: center;
+  background-color: @secondary-background;
 }
 
 .page-footer__container {
-  width: 320px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-top: 40px;
-  padding-bottom: 30px;
-  background-color: @secondary-background;
+  padding-bottom: 17px;
 }
 
 .page-footer__logo {
   display: block;
   width: 135px;
   margin: 0 auto;
-  padding-bottom: 30px;
+  padding-bottom: 17px;
 
   &:hover {
     opacity: 0.8;
@@ -28,19 +23,14 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-footer {
-    background-color: transparent;
-    padding-bottom: 0;
-  }
-
   .page-footer__container {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: 768px;
     padding-bottom: 64px;
-    padding-top: 55px;
+    padding-top: 40px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -54,14 +44,8 @@
 @media (min-width: @desktop-width) {
   .page-footer__container {
     width: 1300px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 100px;
-  }
-
-  .page-footer__contacts {
-    position: relative;
-    width: 1300px;
-    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 56px;
+    padding-top: 38px;
   }
 }

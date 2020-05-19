@@ -7,58 +7,53 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header page-header--index">
-      <div class="page-header__container">
-        <a class="page-header__logo">
-          <picture class="page-header__logo-img">
-            <source  srcset="img/logo-desktop.svg" media="(min-width:1300px)">
-            <source srcset="img/logo-tablet.svg" media="(min-width:768px)">
-            <img src="img/logo-mobile.svg" alt="Логотип компании Кэт энерджи" width="190" height="40">
-          </picture>
-        </a>
-        <nav class="page-header__nav main-nav">
-          <button class="main-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--active">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <picture>
+          <source  srcset="img/logo-desktop.svg" media="(min-width:1300px)">
+          <source srcset="img/logo-tablet.svg" media="(min-width:768px)">
+          <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Компания Кэт Энерджи" width="300" height="80">
+        </picture>
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--index main-nav__link--current">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--index" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--index" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">
         "Кэт Энерджи - интернет-магазин фитнес-еды для котов"
       </h1>
-      <section class="intro page-main__intro">
-        <div class="intro__container">
-          <div class="intro__bg-container">
-            <h2 class="intro__title">Функциональное питание для котов</h2>
-            <p class="intro__subtitle">Занялся собой? Займись котом!</p>
-          </div>
+      <section class="intro">
+        <div class="container">
+          <h2 class="intro__title">Функциональное питание для котов</h2>
+          <p class="intro__subtitle">Занялся собой? Займись котом!</p>
           <picture class="intro__img">
             <source  srcset="img/index-can-desktop@1x.png" media="(min-width: 1300px)">
             <source srcset="img/index-can-tablet@1x.png" media="(min-width: 768px)">
-            <source srcset="img/index-can-mobile@1x.png" media="(min-width: 320px)">
             <img src="img/index-can-mobile@1x.png" alt="Образец упаковки корма Кэт Энерджи">
           </picture>
           <a class="button intro__button" href="form.html">Подобрать программу</a>
         </div>
       </section>
-      <section class="programs page-main__programs">
+      <section class="programs container">
         <h2 class="visually-hidden">Виды программ</h2>
           <article class="programs__article programs__article--cat-slim">
             <h3 class="programs__title">Похудение</h3>
             <p class="programs__text">
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
-            <a class="programs__link" href="#">Каталог Slim</a>
+            <a class="programs__link" href="#"><span class="programs__link-text">Каталог Slim</span></a>
           </article>
           <article class="programs__article programs__article--cat-pro">
             <h3 class="programs__title">Набор массы</h3>
@@ -66,10 +61,10 @@
               Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
-            <a class="programs__link" href="#">Каталог Pro</a>
+            <a class="programs__link" href="#"><span class="programs__link-text">Каталог Pro</span></a>
           </article>
       </section>
-      <section class="about-product page-main__about-product">
+      <section class="about-product">
         <h2 class="about-product__title">Как это работает</h2>
         <ul class="about-product__list">
           <li class="about-product__item about-product__item--leaf">
@@ -82,34 +77,40 @@
             Замените один-два приема обычной еды на наше функциональное питание.
           </li>
           <li class="about-product__item about-product__item--clock">
-            Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего питомца!
+            Уже через месяц наслаждайтесь изменениями к&nbsp;лучшему вашего&nbsp;питомца!
           </li>
         </ul>
       </section>
-      <section class="example page-main__example">
-        <div class="example__container">
-        <h2 class="example__title">Живой пример</h2>
-          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <div class="example__data">
-            <div class="example__info">
-              <div class="example__num">5 кг</div>
-              <div class="example__caption">снижение веса</div>
+      <section class="example">
+        <div class="example__wrap">
+          <div class="example__container">
+            <h2 class="example__title">Живой пример</h2>
+            <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <div class="example__data">
+              <div class="example__info example__info--weight">
+                <div class="example__num">5 кг</div>
+                <div class="example__caption">снижение веса</div>
+              </div>
+              <div class="example__info example__info--time">
+                <p class="example__num">60 дней</p>
+                <p class="example__caption">затрачено времени</p>
+              </div>
+              <p class="example__price"><span>Затраты на питание:</span> <span>15 000 руб.</span></p>
             </div>
-            <div class="example__info">
-              <p class="example__num">60 дней</p>
-              <p class="example__caption">затрачено времени</p>
-            </div>
-            <p class="example__price">Затраты на питание: 15 000 руб.</p>
           </div>
-        </div>
-        <div class="slider__container">
           <div class="slider">
-            <picture class="slider__img">
-              <source srcset="img/before-desktop@1x.png" media="(min-width: 1300px)">
-              <source srcset="img/before-tablet@1x.png" media="(min-width: 768px)">
-              <source srcset="img/before-mobile@1x.png" media="(min-width: 320px)">
-              <img src="img/before-mobile@1x.png" alt="Пример было-стало">
-            </picture>
+            <div class="slider__images">
+              <picture class="slider__img slider__img--before">
+                <source srcset="img/before-desktop@1x.png" media="(min-width: 1300px)">
+                <source srcset="img/before-tablet@1x.png" media="(min-width: 768px)">
+                <img src="img/before-mobile@1x.png" alt="Пример было">
+              </picture>
+              <picture class="slider__img slider__img--after">
+                <source srcset="img/after-desktop@1x.png" media="(min-width: 1300px)">
+                <source srcset="img/after-tablet@1x.png" media="(min-width: 768px)">
+                <img src="img/after-mobile@1x.png" alt="Пример стало">
+              </picture>
+            </div>
             <div class="slider__controls">
               <button class="slider__button slider__button--before">Было</button>
               <div class="slider__bar">
@@ -122,33 +123,30 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="page-footer__contacts contacts">
+      <section class="contacts contacts--index">
         <h2 class="visually-hidden">Контактная информация</h2>
-        <div class="contacts__row contacts__row--index">
-          <p class="contacts__offer">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-          <address class="contacts__address">
-            <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
-            <span class="contacts__city">Санкт-Петербург</span>
-          </address>
+        <div class="contacts__container">
+          <div class="contacts__row">
+            <p class="contacts__offer">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+            <address class="contacts__address">
+              <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
+              <span class="contacts__city">Санкт-Петербург</span>
+            </address>
+          </div>
         </div>
-        <div class="contacts__map-wrap">
-          <picture class="contacts__map">
-            <source srcset="img/bg-map-desktop@1x.png" media="(min-width:1300px)">
-            <source srcset="img/bg-map-tablet@1x.png" media="(min-width:768px)">
-            <source srcset="img/bg-map-mobile@1x.png" media="(min-width:320px)">
-            <img src="img/bg-map-mobile@1x.png" alt="Наш адрес: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-          </picture>
+        <div class="contacts__map">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A044767a686a076fb53180e97191cba1b88cb0acf709c4a06b352a9bf2b203869&amp;source=constructor" width="100%" height="357" frameborder="0"></iframe>
         </div>
       </section>
-      <div class="page-footer__container">
+      <div class="page-footer__container container">
         <a class="page-footer__logo">
           <img class="page-footer__logo-img" src="img/logo-footer.svg" alt="Кэт Энерджи" width="128" height="24">
         </a>
-        <ul class="social-list page-footer__social-list">
+        <ul class="social-list">
           <li class="social-list__item social-list__item--vk">
             <a class="social-list__link" href="https://vk.com">
               <span class="visually-hidden">Вконтакте</span>
-              <svg class="social-list__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 22 12" style="enable-background: new 0 0 22 12;" xml:space="preserve">
+              <svg class="social-list__icon" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 22 12" style="enable-background: new 0 0 22 12;" xml:space="preserve">
                 <path d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
                 c0,0.1,0,0.6-0.3,0.9c-0.3,0.3-0.8,0.4-0.9,0.4h-1.4c-0.7,0-3.2-0.2-5.4-2.3C2.5,7.1,0.2,2.2,0.1,2C0,1.6-0.1,1.2,0.2,0.9
                 s0.8-0.4,1-0.4h3.1c0.1,0,0.4,0.1,0.7,0.3C5.3,1,5.4,1.3,5.5,1.4c0.7,1.5,1.5,2.8,2.6,4C8.2,5,8.3,4,8.2,3.1c0-0.4-0.1-0.8-0.2-1
@@ -167,26 +165,28 @@
           <li class="social-list__item social-list__item--instagram">
             <a class="social-list__link" href="https://instagram.com">
               <span class="visually-hidden">Instagram</span>
-              <svg class="social-list__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 16.1 16" style="enable-background: new 0 0 16.1 16;" xml:space="preserve">
-              <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1H11.8
-                M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0z"/>
-              <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1S9.7,11.1,8,11.1S4.9,9.7,4.9,8S6.3,4.9,8,4.9 M8,3.9C5.7,3.9,3.9,5.7,3.9,8
-              s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
-              <circle class="st0" cx="12.3" cy="3.7" r="0.9"/>
-              </svg>
+              <svg class="social-list__icon" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 16.1 16" style="enable-background: new 0 0 16.1 16;" xml:space="preserve">
+                <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1H11.8
+                  M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0z"/>
+                <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1S9.7,11.1,8,11.1S4.9,9.7,4.9,8S6.3,4.9,8,4.9 M8,3.9C5.7,3.9,3.9,5.7,3.9,8
+                s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
+                <circle class="st0" cx="12.3" cy="3.7" r="0.9"/>
+                </svg>
             </a>
           </li>
           <li class="social-list__item social-list__item--fb">
             <a class="social-list__link" href="https://facebook.com">
               <span class="visually-hidden">Facebook</span>
-              <svg class="social-list__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 10 19" style="enable-background: new 0 0 10 19;" xml:space="preserve"><path d="M7.1,19H2v-8.8H0V5.8h1.9C1.8,3.8,2.1,2.4,3,1.4C3.8,0.5,5,0.1,6.5,0H10v4.2H7.2C7.1,4.4,7,5,7,5.8h3v4.4H7.1V19z M3.1,18h2.8V9.1h2.9V6.8H5.9V6.3c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6H1.1v2.3h2V18z"/></svg>
+              <svg class="social-list__icon" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 10 19" style="enable-background: new 0 0 10 19;" xml:space="preserve"><path d="M7.1,19H2v-8.8H0V5.8h1.9C1.8,3.8,2.1,2.4,3,1.4C3.8,0.5,5,0.1,6.5,0H10v4.2H7.2C7.1,4.4,7,5,7,5.8h3v4.4H7.1V19z M3.1,18h2.8V9.1h2.9V6.8H5.9V6.3c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6H1.1v2.3h2V18z"/></svg>
             </a>
           </li>
         </ul>
-        <div class="copyright page-footer__copyright">
+        <div class="copyright">
           <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__logo-title">HTML Academy</span>
-            <svg class="copyright__logo-img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 60 60"><path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+            <svg class="copyright__logo-img" viewbox="0 0 50 60">
+              <path d="M30.2 5H30L10.3 7.1v36.2L30 55l19.7-11.7V7.1L30.2 5zm17 36.8L30 52 12.8 41.8V27l17.1 10.2V39l-11.7-7v1.8L30 40.9v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8L29.9 12.8 12.8 23V9.4L30 7.6l17.2 1.8V23z"/>
+            </svg>
           </a>
         </div>
       </div>

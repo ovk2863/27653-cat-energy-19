@@ -1,51 +1,23 @@
-.page-main__intro {
-  min-height: 480px;
-  margin-bottom: 22px;
-  text-align: center;
-}
-
-.page-main__programs {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 16px;
-}
-
-.page-main__about-product {
-  margin: 0 auto;
-  margin-bottom: 42px;
-}
-
-.page-main__catalog {
-  width: 320px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  border-top: 1px solid #ededed;
-}
-
-.page-main__add-catalog {
-  width: 320px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
 .page-main__form {
-  width: 320px;
   margin: 0 auto;
+  margin-bottom: 15px;
+  overflow: hidden;
 }
 
 .page-main__form-text {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   padding: 0 20px;
-  width: 240px;
+  width: 270px;
   font-size: 14px;
   line-height: 18px;
   text-align: left;
+  text-transform: uppercase;
 }
 
 .page-main__form-title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 28px;
   padding: 0 20px;
   font-size: 36px;
   line-height: 1.6;
@@ -54,21 +26,30 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-main__intro {
-    min-height: 800px;
-    text-align: left;
+  .page-main__form-text {
+    width: 425px;
+    padding-left: 70px;
+    font-size: 20px;
+    line-height: 1.5;
   }
 
-  .page-main__programs {
-    width: 708px;
+  // .container {
+  //   max-width: 1300px;
+  //   // margin: 0 auto;
+  // }
+
+  .page-main__form {
     margin: 0 auto;
+    margin-bottom: 50px;
   }
 
-  .page-main__example {
+  .page-main__form-title {
     width: 768px;
-    margin: 0 auto;
-    padding-right: 0;
-    padding-left: 0;
+    padding: 0 30px;
+    padding-top: 8px;
+    margin-bottom: 55px;
+    font-size: 60px;
+    line-height: 1;
   }
 }
 
@@ -78,13 +59,39 @@
     text-align: left;
   }
 
-  .page-main__programs {
-    width: 1300px;
-    margin: 0 auto;
-    margin-bottom: 25px;
-  }
+  // .page-main__programs {
+  //   width: 1300px;
+  //   justify-content: space-between;
+  //   margin: 0 auto;
+  //   margin-bottom: 25px;
+  // }
 
   .page-main__about-product {
     margin: 0 auto;
+  }
+
+  .page-main__catalog {
+    border: none;
+    margin-bottom: 17px;
+  }
+
+  // .page-main__container {
+  //   max-width: 1300px;
+  //   margin: 0 auto;
+  //   padding-top: 25px;
+  // }
+
+  .page-main__form {
+    margin-bottom: 80px;
+  }
+
+  .page-main__form-text {
+    padding-left: 20px;
+  }
+
+  .page-main__form-title {
+    padding-left: 15px;
+    padding-top: 25px;
+    padding-top: 0;
   }
 }

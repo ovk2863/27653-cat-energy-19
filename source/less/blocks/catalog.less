@@ -1,3 +1,9 @@
+.catalog {
+  width: 320px;
+  margin-bottom: 12px;
+  border-top: 1px solid #ededed;
+}
+
 .catalog__list {
   margin: 0;
   padding: 0;
@@ -5,16 +11,112 @@
 }
 
 .catalog__item {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid #ededed;
+  border-top: 1px solid #ededed;
 }
 
 .catalog__title {
-  padding-top: 30px;
+  padding-top: 15px;
+  padding-bottom: 32px;
   padding-left: 20px;
   margin: 0;
   font-size: 36px;
   line-height: 1.6;
   font-weight: normal;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog {
+    width: 768px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 0 30px;
+    border: none;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+  }
+
+  .catalog__title {
+    font-size: 60px;
+    line-height: 1;
+    padding-top: 8px;
+    padding-left: 0;
+    padding-bottom: 75px;
+  }
+
+  .catalog__item {
+    width: 325px;
+    margin-right: 58px;
+    margin-bottom: 48px;
+    border: none;
+    background: linear-gradient(to bottom, @main-background 17%, @secondary-background 17%);
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      background: @main-background;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    &--sm {
+      padding-top: 43px;
+
+      .product__title {
+        padding-top: 38px;
+      }
+    }
+
+    &--big {
+      padding-top: 10px;
+
+      .product__title {
+        padding-top: 35px;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog {
+    width: 1300px;
+    padding: 0 20px;
+  }
+
+  .catalog__title {
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 10px;
+    padding-top: 25px;
+  }
+
+  .catalog__item {
+    width: 245px;
+    min-height: 475px;
+    padding-top: 0;
+    margin-right: 80px;
+    margin-bottom: 60px;
+    background: linear-gradient(to bottom, @main-background 16%, @secondary-background 16%);
+
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    &--sm {
+      padding-top: 36px;
+
+      .product__title {
+        padding-top: 34px;
+      }
+    }
+  }
 }
