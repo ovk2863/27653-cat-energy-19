@@ -48,6 +48,10 @@
   box-shadow: 0 0 0 2px @content-color;
 }
 
+.control__radio-input:disabled + .control__title {
+  opacity: 0.3;
+}
+
 .control__title {
   padding-top: 3px;
   margin-left: 45px;
@@ -106,6 +110,10 @@
   box-shadow: 0 0 0 2px @content-color;
 }
 
+.control__checkbox-input:disabled + .control__title {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .control {
     &:first-child {
@@ -126,6 +134,7 @@
 
     &--checkbox {
       width: 283px;
+      margin-bottom: 43px;
 
       .control__title {
         &::after {
@@ -154,5 +163,13 @@
   .control__checkbox-input:checked + .control__title::before {
     top: 12px;
     left: -47px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .control {
+    &:first-child {
+      margin-right: 0;
+    }
   }
 }

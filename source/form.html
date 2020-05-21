@@ -32,7 +32,7 @@
     </header>
     <main class="page-main">
       <section class="page-main__form">
-        <div class="container">
+        <div class="page-main__container">
           <h2 class="page-main__form-title">Подбор программы</h2>
           <p class="page-main__form-text">Заполните анкету и мы подберем программу питания для вашего кота</p>
         </div>
@@ -41,13 +41,13 @@
           <fieldset class="form__fieldset form__fieldset--cat-data">
             <label class="form-field">
               <span class="form-field__text">Имя:*</span>
-              <input class="form-field__input" type="text" placeholder="Барсик" required>
+              <input class="form-field__input" type="text" placeholder="Барсик">
             </label>
-            <label class="form-field">
+            <label class="form-field form-field--cat-data">
               <span class="form-field__text">Вес (кг):*</span>
-              <input class="form-field__input" type="text" placeholder="7" required>
+              <input class="form-field__input" type="text" placeholder="7">
             </label>
-            <label class="form-field">
+            <label class="form-field form-field--cat-data">
               <span class="form-field__text">Возраст (лет):</span>
               <input class="form-field__input" type="text" placeholder="7">
             </label>
@@ -72,17 +72,17 @@
           </div>
           <fieldset class="form__fieldset form__fieldset--owner-data">
             <div class="form__container">
-              <label class="form-field">
+              <label class="form-field form-field--owner-data">
                 <span class="form-field__text">E-mail:*</span>
-                <input class="form-field__input" type="email" name="user-mail" placeholder="kuklachev@gmail.com" required>
-                  <svg class="form-field__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 17 13" style="enable-background: new 0 0 17 13;" xml:space="preserve">
+                <input class="form-field__input" type="email" name="user-mail" placeholder="kuklachev@gmail.com">
+                  <svg class="form-field__icon form-field__icon--email" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 17 13" style="enable-background: new 0 0 17 13;" xml:space="preserve">
                     <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"/>
                   </svg>
               </label>
-              <label class="form-field">
+              <label class="form-field form-field--owner-data">
                 <span class="form-field__text">Телефон:*</span>
-                <input class="form-field__input" type="tel" name="user-tel" placeholder="8 (960) 900-60-90" required>
-                <svg class="form-field__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 20 20"  xml:space="preserve">
+                <input class="form-field__input" type="tel" name="user-tel" placeholder="8 (960) 900-60-90">
+                <svg class="form-field__icon form-field__icon--tel" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 20 20"  xml:space="preserve">
                   <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
                   <path
                     d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
@@ -144,7 +144,7 @@
           </div>
         </div>
         <div class="contacts__map">
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A044767a686a076fb53180e97191cba1b88cb0acf709c4a06b352a9bf2b203869&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A044767a686a076fb53180e97191cba1b88cb0acf709c4a06b352a9bf2b203869&amp;source=constructor" frameborder="0"></iframe>
         </div>
       </section>
       <div class="page-footer__container container">

@@ -3,7 +3,7 @@
 }
 
 .contacts__row {
-  padding: 15px 20px;
+  padding: 18px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,6 +17,11 @@
   background: url("../../img/bg-map-mobile@1x.png") no-repeat;
   background-position: 0 -43px;
   background-size: cover;
+}
+
+.contacts__map iframe {
+  width: 100%;
+  height: 357px;
 }
 
 .contacts__offer {
@@ -66,10 +71,16 @@
 
   .contacts__map {
     width: 100%;
+    height: 400px;
     margin: 0 auto;
     background: url("../../img/bg-map-tablet@1x.png") no-repeat;
     background-position: 0 0;
     background-size: cover;
+  }
+
+  .contacts__map iframe {
+    width: 100%;
+    height: 400px;
   }
 }
 
@@ -91,9 +102,7 @@
     left: 20px;
     width: 570px;
     height: 201px;
-    padding-top: 40px;
-    padding-left: 75px;
-    padding-right: 85px;
+    padding: 40px 85px 0 75px;
     margin: 0;
     background: #ffffff;
     overflow: auto;

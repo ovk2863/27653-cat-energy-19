@@ -1,6 +1,6 @@
 .add-catalog {
   position: relative;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
   margin: 0 auto;
 
   &::before {
@@ -11,7 +11,7 @@
     right: 0;
     width: 50%;
     height: 3px;
-    background-color: #68b738;
+    background-color: @icon-background;
     z-index: -1;
   }
 }
@@ -25,20 +25,20 @@
 }
 
 .add-catalog__title {
-  width: 250px;
+  width: 270px;
+  padding-left: 20px;
   padding-right: 20px;
   margin: 0;
   margin-bottom: 35px;
   font-size: 24px;
   font-weight: normal;
   line-height: 1;
-  background-color: #ffffff;
+  background-color: @main-background;
 }
 
 @media (min-width: @tablet-width) {
   .add-catalog {
-    // width: 768px;
-    padding-bottom: 75px;
+    padding-bottom: 80px;
 
     &::before {
       content: "";
@@ -48,7 +48,7 @@
       right: 0;
       width: 100%;
       height: 3px;
-      background-color: #68b738;
+      background-color: @icon-background;
       z-index: -1;
     }
   }
@@ -58,13 +58,14 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid #ededed;
+    border: 1px solid @border-color;
     margin-bottom: 69px;
   }
 
   .add-catalog__title-container {
     max-width: 1300px;
     margin: 0 auto;
+    padding-left: 30px;
   }
 
   .add-catalog__title {
@@ -72,22 +73,18 @@
     font-size: 36px;
     line-height: 1;
     margin: 0;
-    padding: 0;
-    padding-top: 6px;
-    padding-left: 35px;
-    padding-bottom: 80px;
+    padding: 6px 0 80px 35px;
   }
 
   .add-catalog__item {
     width: 100%;
-    padding: 25px 37px 1px;
-    border-bottom: 1px solid #ededed;
+    padding: 15px 37px 22px;
+    border-bottom: 1px solid @border-color;
   }
 }
 
 @media (min-width: @desktop-width) {
   .add-catalog {
-    // width: 1300px;
     padding-bottom: 15px;
 
     &::before {
@@ -103,16 +100,23 @@
   }
 
   .add-catalog__list {
-    width: 913px;
+    width: 895px;
     margin-right: 80px;
-    padding-left: 20px;
     border: none;
-    border-top: 1px solid #ededed;
+    border-top: 1px solid @border-color;
+  }
+
+  .add-catalog__properties {
+    width: 300px;
   }
 
   .add-catalog__title {
     width: 390px;
-    padding-left: 18px;
+    padding-left: 0;
+  }
+
+  .add-catalog__title-container {
+    padding-left: 20px;
   }
 
   .add-catalog__item {

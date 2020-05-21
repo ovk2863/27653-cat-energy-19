@@ -10,6 +10,7 @@
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
 
   &:hover {
     background-color: @btn-interaction-background;
@@ -18,5 +19,10 @@
   &:active {
     color: @btn-active-color;
     background-color: @btn-interaction-background;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
   }
 }
