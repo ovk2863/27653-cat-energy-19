@@ -1,5 +1,5 @@
 .example {
-  padding-top: 15px;
+  padding-top: 20px;
   background-color: @secondary-background;
 }
 
@@ -15,8 +15,7 @@
 
 .example__description {
   margin: 0;
-  padding-right: 10px;
-  padding-bottom: 25px;
+  padding: 0 21px 25px 20px;
   font-family: @secondary-font;
   font-size: 14px;
   line-height: 1.3;
@@ -66,12 +65,14 @@
 }
 
 .example__price {
+  padding-left: 10px;
   text-transform: uppercase;
   word-break: break-word;
 }
 
 @media (min-width: @tablet-width) {
   .example {
+    padding-top: 40px;
     background-color: #ffffff;
   }
 
@@ -84,14 +85,13 @@
   .example__title {
     width: 100%;
     margin: 0 auto;
-    padding-right: 30px;
-    padding-bottom: 65px;
+    padding: 0 30px 65px 0;
     font-size: 60px;
     line-height: 1;
   }
 
   .example__description {
-    padding-bottom: 50px;
+    padding: 0 0 50px 0;
     font-size: 16px;
     font-family: @secondary-font;
     line-height: 1.5;
@@ -127,8 +127,9 @@
 
   .example__price {
     margin-top: 10px;
+    padding-left: 0;
     text-align: right;
-    width: 174px;
+    width: 180px;
     font-size: 20px;
     line-height: 1.4;
     margin-left: auto;
@@ -152,14 +153,11 @@
   .example__container {
     width: 568px;
     background: linear-gradient(#ffffff 0%, #ffffff 27%, #f2f2f2 27%, #f2f2f2 100%);
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 10px;
+    padding: 0 20px 10px 12px;
   }
 
   .example__title {
-    padding-top: 45px;
-    padding-bottom: 145px;
+    padding: 40px 0 145px;
   }
 
   .example__description {

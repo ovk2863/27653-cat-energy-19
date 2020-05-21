@@ -7,10 +7,20 @@
 
 .form-field__icon {
   position: absolute;
-  right: 10px;
-  top: 20%;
-  width: 20px;
-  height: 20px;
+
+  &--email {
+    width: 18px;
+    height: 14px;
+    right: 15px;
+    top: 16px;
+  }
+
+  &--tel {
+    width: 21px;
+    height: 21px;
+    right: 13px;
+    top: 16px;
+  }
 
   &:hover {
     fill: #222222;
@@ -33,7 +43,6 @@
   flex: 1;
   margin-left: 11px;
   padding: 13px;
-  padding-right: 40px;
   border: 1px solid #bababa;
   outline: none;
 
@@ -52,6 +61,10 @@
   &:disabled {
     border: 2px solid #cdcdcd;
     opacity: 0.3;
+  }
+
+  &:required {
+    box-shadow: 0 0 0 2px @form-input-error;
   }
 
   &:invalid {
@@ -102,6 +115,10 @@
     box-shadow: 0 0 0 2px @content-color;
   }
 
+  &:disabled {
+    opacity: 0.3;
+  }
+
   &::placeholder {
     font-family: @main-font;
     font-size: 16px;
@@ -131,7 +148,7 @@
   .form-field__textarea {
     width: 625px;
     height: 174px;
-    padding: 8px 18px;
+    padding: 11px 18px;
     margin: 0 auto;
 
     &::placeholder {
@@ -139,12 +156,45 @@
       line-height: 1.5;
     }
   }
+
+  &--email {
+    right: 15px;
+    top: 22px;
+  }
+
+  &--tel {
+    right: 13px;
+    top: 19px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .form-field {
     max-width: 1300px;
-    margin: 0 auto;
+    margin: 0;
+
+    &--owner-data {
+      flex: 1;
+
+      &:first-child {
+        margin-right: 79px;
+      }
+
+      .form-field__input {
+        margin-left: 17px;
+      }
+    }
+
+    &--cat-data {
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .form-field__icon {
+    top: 24px;
+    right: 20px;
   }
 
   .form-field__input {

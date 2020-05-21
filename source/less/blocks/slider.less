@@ -1,7 +1,7 @@
 .slider {
   width: 320px;
   margin: 0 auto;
-  padding-top: 28px;
+  padding-top: 23px;
   display: flex;
   flex-direction: column;
 }
@@ -11,8 +11,7 @@
   justify-content: space-between;
   align-items: center;
   width: 195px;
-  margin: 0 auto;
-  margin-bottom: 31px;
+  margin: 0 auto 31px;
 }
 
 .slider__images {
@@ -67,7 +66,7 @@
     padding: 0 30px;
     margin: 0 auto;
     min-height: 462px;
-    background-color: #f2f2f2;
+    background-color: @secondary-background;
   }
 
   .slider__container {
@@ -112,6 +111,15 @@
     &:active {
       border-bottom: 1px solid transparent;
     }
+
+    &:hover + .slider__bar .slider__progress {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active + .slider__bar .slider__progress {
+      border: 2px solid @icon-background;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+    }
   }
 
   .slider__bar {
@@ -127,12 +135,23 @@
     position: absolute;
     bottom: -13px;
     left: 198px;
-    width: 35px;
-    height: 34px;
+    width: 33px;
+    height: 32px;
+    border: 2px solid transparent;
     border-radius: 50%;
-    border: 12px solid @main-background;
-    background-color: @icon-background;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    background-color: @main-background;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 11px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: @icon-background;
+    }
   }
 
   .slider__controls {
@@ -156,7 +175,7 @@
 
   .slider__images {
     min-height: 172px;
-    background: #ffffff;
+    background: @main-background;
     margin-bottom: 370px;
   }
 
