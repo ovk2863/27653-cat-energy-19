@@ -1,5 +1,5 @@
 .offer {
-  padding: 110px 40px 15px;
+  padding: 60px 40px 15px;
   background: url("../../img/gift-photo-mobile@1x.jpg") no-repeat center;
   background-size: 280px 289px;
   background-color: @icon-background;
@@ -14,6 +14,7 @@
 .offer__icon {
   width: 56px;
   height: 61px;
+  margin-bottom: 35px;
   fill: @secondary-color;
 }
 
@@ -30,10 +31,9 @@
   .offer {
     min-height: 200px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    padding-right: 115px;
-    padding-top: 20px;
+    padding: 20px 115px 15px 90px;
     text-align: left;
     background: url("../../img/gift-photo-tablet@1x.jpg") no-repeat center;
     background-color: @icon-background;
@@ -46,7 +46,11 @@
   }
 
   .offer__text {
-    width: 181px;
+    width: 183px;
+  }
+
+  .offer__icon {
+    margin-bottom: 0;
   }
 }
 
@@ -58,7 +62,7 @@
     background: url("../../img/gift-photo-desktop@1x.jpg") no-repeat top;
     background-color: @icon-background;
     background-size: cover;
-    padding: 165px 30px 0;
+    padding: 60px 30px 15px;
     text-align: center;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {

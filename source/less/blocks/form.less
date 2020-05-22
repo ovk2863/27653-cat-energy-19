@@ -20,7 +20,7 @@
   padding: 25px 20px;
 
   &--comment {
-    padding: 2px 0 8px 0;
+    padding: 2px 10px 8px;
 
     &::after {
       left: 160px;
@@ -33,7 +33,7 @@
   }
 
   &--additional {
-    padding: 1px 0 9px;
+    padding: 1px 10px 9px;
 
     &::after {
       top: 17px;
@@ -124,8 +124,7 @@
     max-width: 1300px;
 
     &--comment {
-      padding-top: 0;
-      padding-bottom: 8px;
+      padding: 0 0 8px 15px;
 
       &::after {
         left: 0;
@@ -138,8 +137,7 @@
     }
 
     &--additional {
-      padding-top: 1px;
-      padding-bottom: 9px;
+      padding: 2px 0 7px 15px;
 
       &::after {
         top: 26px;
@@ -251,6 +249,14 @@
   .form__legend {
     padding-left: 0;
     padding-right: 20px;
+
+    &--comment {
+      padding-left: 0;
+    }
+
+    &--additional {
+      padding-left: 0;
+    }
   }
 
   .form__legend-text {
@@ -288,7 +294,7 @@
     }
 
     &--comment {
-      width: 1220px;
+      width: 1300px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
