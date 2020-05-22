@@ -10,6 +10,7 @@ var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
 var jsmin = require("gulp-jsmin");
 var imagemin = require("gulp-imagemin");
+var htmlmin = require("gulp-htmlmin");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
@@ -64,6 +65,12 @@ gulp.task("jsmin", function (done) {
   done();
 });
 
+gulp.task("htmlmin", function(){
+  return gulp.src("source/*.html")
+  .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("build"));
+})
+
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
@@ -99,5 +106,5 @@ gulp.task("refresh", function(done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy","css", "jsmin", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy","css", "jsmin", "sprite", "html", "htmlmin"));
 gulp.task("start", gulp.series("build", "server"));

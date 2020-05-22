@@ -3,25 +3,26 @@
   margin: 0 auto;
 }
 
+.copyright__logo-img {
+  width: 27px;
+  height: 34px;
+  fill: #666666;
+}
+
 .copyright__logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   text-decoration: none;
-
-  &:hover {
-    fill: @social-icon-hover;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
-.copyright__logo-img {
-  width: 40px;
-  height: 40px;
+.copyright__logo:hover .copyright__logo-img {
+  fill: @social-icon-hover;
+}
+
+.copyright__logo:active {
+  opacity: 0.3;
 }
 
 .copyright__logo-title {
@@ -43,7 +44,8 @@
   }
 
   .copyright__logo-img {
-    width: 27px;
-    height: 34px;
+    width: 37px;
+    height: 37px;
+    fill: #666666;
   }
 }
