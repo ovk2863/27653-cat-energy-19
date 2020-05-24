@@ -1,21 +1,25 @@
 .example {
   padding-top: 20px;
+  padding-bottom: 35px;
   background-color: @secondary-background;
+}
+
+.example__container {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .example__title {
   width: 280px;
   max-width: 1300px;
-  margin: 0 auto;
-  margin-bottom: 28px;
+  margin: 0 auto 25px;
   font-size: 36px;
   line-height: 1.6;
   font-weight: normal;
 }
 
 .example__description {
-  margin: 0;
-  padding: 0 21px 25px 20px;
+  padding: 0 21px 12px 20px;
   font-family: @secondary-font;
   font-size: 14px;
   line-height: 1.3;
@@ -65,7 +69,6 @@
 }
 
 .example__price {
-  padding-left: 10px;
   text-transform: uppercase;
   word-break: break-word;
 }
@@ -73,25 +76,26 @@
 @media (min-width: @tablet-width) {
   .example {
     padding-top: 40px;
+    padding-bottom: 0;
     background-color: #ffffff;
   }
 
   .example__container {
-    width: 768px;
+    width: 765px;
     margin: 0 auto;
-    padding: 0 30px 235px 30px;
+    padding: 0 31px 235px 30px;
   }
 
   .example__title {
     width: 100%;
     margin: 0 auto;
-    padding: 0 30px 65px 0;
+    padding: 0 30px 50px 0;
     font-size: 60px;
     line-height: 1;
   }
 
   .example__description {
-    padding: 0 0 50px 0;
+    padding: 0 2px 36px 0;
     font-size: 16px;
     font-family: @secondary-font;
     line-height: 1.5;
@@ -140,7 +144,7 @@
   .example {
     margin: 0 auto;
     padding-top: 0;
-    background: linear-gradient(to bottom, white 0%, white 172px, #f2f2f2 172px, #f2f2f2 100%);
+    background: linear-gradient(to bottom, white 0%, white 180px, #f2f2f2 180px, #f2f2f2 100%);
     display: flex;
   }
 
@@ -152,17 +156,17 @@
 
   .example__container {
     width: 568px;
-    background: linear-gradient(#ffffff 0%, #ffffff 27%, #f2f2f2 27%, #f2f2f2 100%);
+    background: linear-gradient(#ffffff 0%, #ffffff 180px, #f2f2f2 180px, #f2f2f2 100%);
     padding: 0 20px 10px 12px;
   }
 
   .example__title {
-    padding: 40px 0 145px;
+    padding: 45px 0 129px;
   }
 
   .example__description {
-    width: 445px;
-    padding-bottom: 69px;
+    width: 435px;
+    padding-bottom: 50px;
   }
 
   .example__price {

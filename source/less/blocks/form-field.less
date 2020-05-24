@@ -3,6 +3,12 @@
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 15px;
+
+  &--cat-data {
+    .form-field__input {
+      padding: 13px 18px; //padding: 22px 10px 13px 20px;
+    }
+  }
 }
 
 .form-field__icon {
@@ -129,13 +135,21 @@
 }
 
 @media (min-width: @tablet-width) {
+  .form-field {
+    &--cat-data {
+      .form-field__input {
+        padding: 22px 10px 13px 20px;
+      }
+    }
+  }
+
   .form-field__text {
     font-size: 20px;
     line-height: 1;
   }
 
   .form-field__input {
-    padding: 17px 35px 17px 20px;
+    padding: 20px 35px 14px 20px;
     margin-bottom: 4px;
     margin-left: 17px;
 
@@ -157,14 +171,16 @@
     }
   }
 
-  &--email {
-    right: 15px;
-    top: 22px;
-  }
+  .form-field__icon {
+    &--email {
+      right: 15px;
+      top: 20px;
+    }
 
-  &--tel {
-    right: 13px;
-    top: 19px;
+    &--tel {
+      right: 13px;
+      top: 20px;
+    }
   }
 }
 
@@ -174,10 +190,12 @@
     margin: 0;
 
     &--owner-data {
-      flex: 1;
+      flex: 0 0 572px;
 
-      &:first-child {
-        margin-right: 79px;
+      &:last-child {
+        .form-field__input {
+          padding-left: 15px;
+        }
       }
 
       .form-field__input {
@@ -186,6 +204,8 @@
     }
 
     &--cat-data {
+      padding-bottom: 20px;
+
       &:last-child {
         padding-bottom: 0;
       }
@@ -193,12 +213,12 @@
   }
 
   .form-field__icon {
-    top: 24px;
+    top: 18px;
     right: 20px;
   }
 
   .form-field__input {
-    padding: 21px 20px 16px 17px;
+    padding: 21px 20px 16px 20px;
     margin-bottom: 0;
   }
 

@@ -18,7 +18,7 @@
           <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Компания Кэт энерджи" width="300" height="80">
         </picture>
       </a>
-      <nav class="main-nav main-nav--opened main-nav--nojs">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -42,7 +42,7 @@
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
           <div class="form__container">
           <fieldset class="form__fieldset form__fieldset--cat-data">
-            <label class="form-field">
+            <label class="form-field form-field--cat-data">
               <span class="form-field__text">Имя:*</span>
               <input class="form-field__input" type="text" placeholder="Барсик">
             </label>
@@ -55,7 +55,7 @@
               <input class="form-field__input" type="text" placeholder="7">
             </label>
           </fieldset>
-          <fieldset class="form__fieldset form__fieldset--program-type" tabindex="0">
+          <fieldset class="form__fieldset form__fieldset--program-type">
             <label class="control control--radio">
               <input class="visually-hidden control__radio-input" type="radio" name="program-type" value="low-fat" checked>
               <span class="control__title">Похудение</span>
@@ -70,7 +70,7 @@
             </label>
           </fieldset>
         </div>
-          <div class="form__legend-container">
+          <div class="form__legend-container form__legend-container--owner-data">
             <h3 class="form__legend"><span class="form__legend-text">Контактные данные (владельца кота)</span></h3>
           </div>
           <fieldset class="form__fieldset form__fieldset--owner-data">
@@ -91,7 +91,7 @@
               </label>
             </div>
           </fieldset>
-          <div class="form__legend-container form__legend--comment">
+          <div class="form__legend-container form__legend-container--comment">
             <h3 class="form__legend form__legend--comment"><span class="form__legend-text">Комментарий</span></h3>
           </div>
           <div class="form__fieldset form__fieldset--comment">
@@ -99,24 +99,24 @@
               <textarea class="form-field__textarea" name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
             </label>
           </div>
-          <div class="form__legend-container form__legend--additional">
+          <div class="form__legend-container form__legend-container--additional">
             <h3 class="form__legend form__legend--additional"><span class="form__legend-text">Дополнительно</span></h3>
           </div>
           <fieldset class="form__fieldset form__fieldset--additional">
           <div class="form__container">
-              <label class="control control--checkbox" tabindex="0">
+              <label class="control control--checkbox">
                 <input class="visually-hidden control__checkbox-input" type="checkbox" name="sweetener" value="sweetener" checked>
                 <span class="control__title">Сахарозаменитель</span>
               </label>
-              <label class="control control--checkbox" tabindex="0">
+              <label class="control control--checkbox">
                 <input class="visually-hidden control__checkbox-input" type="checkbox" name="water" value="water">
                 <span class="control__title">Питьевая вода</span>
               </label>
-              <label class="control control--checkbox" tabindex="0">
+              <label class="control control--checkbox">
                 <input class="visually-hidden control__checkbox-input" type="checkbox" name="milk" value="milk">
                 <span class="control__title">Молоко</span>
               </label>
-              <label class="control control--checkbox" tabindex="0">
+              <label class="control control--checkbox">
                 <input class="visually-hidden control__checkbox-input" type="checkbox" name="vitamins" value="vitamins">
                 <span class="control__title">Витамины</span>
               </label>
