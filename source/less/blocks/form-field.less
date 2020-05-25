@@ -3,12 +3,6 @@
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 15px;
-
-  &--cat-data {
-    .form-field__input {
-      padding: 13px 18px; //padding: 22px 10px 13px 20px;
-    }
-  }
 }
 
 .form-field__icon {
@@ -47,7 +41,7 @@
 
 .form-field__input {
   flex: 1;
-  margin-left: 11px;
+  margin-left: 13px;
   padding: 13px;
   border: 1px solid #bababa;
   outline: none;
@@ -135,21 +129,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .form-field {
-    &--cat-data {
-      .form-field__input {
-        padding: 22px 10px 13px 20px;
-      }
-    }
-  }
-
-  .form-field__text {
-    font-size: 20px;
-    line-height: 1;
-  }
-
   .form-field__input {
-    padding: 20px 35px 14px 20px;
     margin-bottom: 4px;
     margin-left: 17px;
 
@@ -157,6 +137,31 @@
       font-size: 20px;
       line-height: 1.13;
     }
+  }
+
+  .form-field {
+    &--cat-data {
+      .form-field__input {
+        padding: 22px 10px 13px 20px;
+      }
+    }
+
+    &--owner-data {
+      .form-field__input {
+        padding: 22px 10px 13px 22px;
+      }
+
+      &:last-child {
+        .form-field__input {
+          padding: 22px 10px 13px 15px;
+        }
+      }
+    }
+  }
+
+  .form-field__text {
+    font-size: 20px;
+    line-height: 1;
   }
 
   .form-field__textarea {
